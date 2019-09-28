@@ -9,6 +9,15 @@ class Node:
         self.outflow = generation
         self.threshold = threshold
         self.is_leaf = (generation != 0)
+        self.altitude = 50
+
+    def load_from_json(self, neighbors, inflow, outflow, generation, threshold, altitude):
+        self.neighbors = np.array(neighbors)
+        self.inflow = inflow
+        self.outflow = outflow + generation
+        self.threshold = threshold
+        self.is_leaf = (generation != 0)
+        self.altitude = altitude
 
 
 class Edge:
