@@ -27,8 +27,8 @@ var cy = cytoscape({
       {
         selector: 'node',
         style: {
-          'background-color': '#00f',
-          'label': 'data(id)'
+          'background-color': '#00f'
+          //'label': 'data(id)'
         }
       },
   
@@ -37,15 +37,16 @@ var cy = cytoscape({
         style: {
           'width': 3,
           'line-color': '#ccc',
-          'target-arrow-color': '#ccc',
-          'target-arrow-shape': 'triangle'
+          'mid-target-arrow-color': '#ccc',
+          'mid-target-arrow-shape': 'vee',
+          'arrow-scale': 2
         }
       }
     ],
   
     layout: {
-      name: 'random',
-      rows: 1
+      name: 'grid',
+      rows: 4
     }
   
   });
@@ -60,3 +61,25 @@ var cy = cytoscape({
             }
           });
   };
+
+
+function makeGraph(input) {
+    //making nodes here:
+    for (node in input[0]){
+        var object = { 
+            group : 'nodes',
+            data: {id: node["id"], size: node["size"] , size: node["fill"]},
+            position: { x : node["x"] , y: node["y"]}
+        };
+
+        cy.add(object);
+    }
+
+    for (edge in input[1]) {
+        var object = {
+            group: 'edges',
+            data: {id: edge["id"], flow: edge["flow"] , source: edge["source"] , target: edge["target"]},
+            style: {'target-arrow-shape': 'triangle'}
+        }
+    }
+}
