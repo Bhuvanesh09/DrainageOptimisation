@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{What the Problem is?}{}% 1
+\BOOKMARK [1][-]{section.2}{Core Cases}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{No Flood Situation - Attempt Water Recharge}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Managable Flood - Not let the Streets Flood}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Extreme Floods - Keep the Toxic Stuff out}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Cost Analysis}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{The Minimal Cost Solution}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Expanding to an Extensive Solution}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{Civil Engineering Benefits}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{IoT Sensors and Actuators}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{List of Sensors}{section.4}% 11
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Bernoulli Detection of Cloggage}{subsection.4.1}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Actuator}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.3}{Software}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Algorithmic Facts and Proof of Concepts}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{The Cut Algorithm for Handing Floods}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Augmenting paths for Optimizing Homogeneity}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.3}{The Neural Net Regressor}{section.5}% 18

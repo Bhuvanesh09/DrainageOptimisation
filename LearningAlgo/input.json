@@ -1,0 +1,26 @@
+[
+  {
+    "neighbors": [1, 2, 3],
+    "inflow": 0,
+    "outflow": 40,
+    "threshold": 0.6,
+    "generation": 1,
+    "altitude": 40
+  },
+  {
+    "neighbors": [1, 2, 3],
+    "inflow": 0,
+    "outflow": 40,
+    "threshold": 0.6,
+    "generation": 1,
+    "altitude": 40
+  },
+  {
+    "neighbors": [1, 2, 3],
+    "inflow": 0,
+    "outflow": 40,
+    "threshold": 0.6,
+    "generation": 1,
+    "altitude": 40
+  }
+]
