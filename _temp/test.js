@@ -77,14 +77,22 @@ function fToW(flow){
   };
 
 
-function makeGraph(input) {
+function makeGraph1(inp) {
     //making nodes here:
-    for (node of input[0]){
+    for (node of inp[0]){
         var col,size;
-        if(node["fill"]){
-            col = "#f00";
-        }else {
-            col = "#00f";
+        if(node["fill"]==5){
+            col = "#1a0000";
+        }else if(node["fill"]==4) {
+            col = "#660000";
+        }else if(node["fill"]==3) {
+            col = "#990000";
+        }else if(node["fill"]==2) {
+            col = "#cc0000";
+        }else if(node["fill"]==1) {
+            col = "#ff1a1a";
+        }else if(node["fill"]==0) {
+            col = "#ff4d4d";
         }
 
         size = hToR(node["size"]);
@@ -102,7 +110,7 @@ function makeGraph(input) {
         cy.add(object);
     }
 
-    for (edge of input[1]) {
+    for (edge of inp[1]) {
         if(edge["col"]=="gray"){
             col = "#ccc";
         }
@@ -135,5 +143,23 @@ function makeGraph(input) {
     }
 }
 
-var inp = [[{"id":1,"size":100,"fill":1,"x":200,"y":60},{"id":2,"size":200,"fill":0,"x":600,"y":60},{"id":3,"size":50,"fill":0,"x":200,"y":260},{"id":4,"size":50,"fill":1,"x":600,"y":260}],[{"id":13,"flow":200,"source":1,"target":3,col:"red"},{col:"gray","id":32,"flow":100,"source":3,"target":2},{col:"blue","id":24,"flow":50,"source":2,"target":4}]]
+var inp = [
+    [
+        {"id":1,"size":100,"fill":1,"x":300,"y":60},
+        {"id":2,"size":200,"fill":0,"x":500,"y":60},
+        {"id":3,"size":50,"fill":3,"x":200,"y":260},
+        {"id":4,"size":50,"fill":5,"x":600,"y":260}
+        // {"id":5,"size":50,"fill":5,"x":700,"y":360},
+        // {"id":6,"size":50,"fill":5,"x":700,"y":360}
 
+    ],
+    [
+        {"id":13,"flow":200,"source":1,"target":3,col:"red"},
+        {col:"gray","id":32,"flow":100,"source":3,"target":2},
+        {col:"blue","id":24,"flow":50,"source":2,"target":4}
+    ]
+]
+
+function flowChange(i){
+    const timeFlow = []
+}

@@ -8,7 +8,7 @@
     
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6 offset-3">
+            <div class="col-6 offset-3" style="text-align: center; margin-top: 2vw">
                 <h1>Drain Optimisation Visualisation</h1>
             </div>
         </div>
@@ -23,10 +23,21 @@
         </div>
         <div class="row">
             <div class="col-5"></div>
-            <div class="col-2">
-                    <button type="button" class="btn btn-primary" onclick="makeGraph(inp)">Make Graph</button>
+            <div class="col-2" style="text-align: center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary" onclick="makeGraph1(inp)">Graph 1</button>
+                    <button type="button" class="btn btn-primary" onclick="makeGraph2()">Graph 2</button>
+                    <button type="button" class="btn btn-primary" onclick="makeGraph3()">Graph 3</button>
+                </div>             
             </div>
-            <div class="col-5"></div>
+            <div class="col-5">    
+            </div>
+        
+        </div>
+        <div class="row">
+            <div class="col-12" style="text-align: center ; margin-top:2vh" >
+                <button type="button" class="btn btn-secondary" onclick="nextStep()">Next Time Step</button>
+            </div>
         </div>
 
     </div>
