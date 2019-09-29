@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="test.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 offset-3" style="text-align: center; margin-top: 2vw">
+          <h1>Drain Optimisation Visualisation</h1>
+        </div>
+      </div>
+      <div class="row" style="height: 50% ">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <div id="graphDiv"></div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-5"></div>
+        <div class="col-2" style="text-align: center">
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="makeGraph1(inp)"
+            >
+              Graph 1
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="makeGraph1(inp2)"
+            >
+              Graph 2
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="makeGraph1(inp3)"
+            >
+              Graph 3
+            </button>
+          </div>
+        </div>
+        <div class="col-5"></div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="text-align: center ; margin-top:2vh">
+          <button type="button" class="btn btn-secondary" onclick="nextStep()">
+            Next Time Step
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.9.3/cytoscape.umd.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+      integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="test.js"></script>
+  </body>
+</html>
