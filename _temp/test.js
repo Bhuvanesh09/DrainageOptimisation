@@ -187,6 +187,31 @@ var inp2 = [
   ]
 ];
 
+var inp3 = [
+[
+{id: 0, size: 100,   fill: 15, x: 300, y: 60},
+  {id: 1, size: 100, fill: 15, x: 500, y: 60},
+  {id: 2, size: 100, fill: 16, x: 200, y: 260},
+  {id: 3, size: 100, fill: 16, x: 600, y: 260},
+  {id: 4, size: 100, fill: 16, x: 100, y: 260},
+  {id: 5, size: 100, fill: 15, x: 500, y: 260},
+  {id: 6, size: 100, fill: 16, x: 250, y: 260},
+  {id: 7, size: 100, fill: 15, x: 700, y: 260}
+],
+ [
+ {id: 13,  flow: 10, source: 0, target: 1, col: 'red'},
+  {id: 14, flow: 6,  source: 0, target: 4, col: 'red'},
+  {id: 15, flow: 15, source: 1, target: 2, col: 'red'},
+  {id: 16, flow: 30, source: 2, target: 4, col: 'blue'},
+  {id: 17, flow: 7,  source: 2, target: 5, col: 'red'},
+  {id: 18, flow: 10, source: 3, target: 2, col: 'red'},
+  {id: 19, flow: 15, source: 3, target: 6, col: 'blue'},
+  {id: 20, flow: 8,  source: 4, target: 3, col: 'blue'},
+  {id: 21, flow: 25, source: 5, target: 7, col: 'red'},
+  {id: 22, flow: 17, source: 7, target: 6, col: 'red'}
+]
+];
+  
 function flowChange(i) {
   const timeFlow = [];
 }
