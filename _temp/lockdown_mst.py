@@ -96,7 +96,7 @@ class Graph:
 with open('inpMST.json') as jsonfile:
     data = json.load(jsonfile)
 print(len(data))
-num_vertices = 4
+num_vertices = 8
 g = Graph(num_vertices)
 for gg in data:
     g.addEdge(gg['u'],gg['v'],gg['volume_of_flow'])
